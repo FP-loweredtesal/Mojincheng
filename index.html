@@ -119,10 +119,10 @@
 							])
 						),
 					])
-					.then(()=>loadScript([`https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.js`,'./mosiyuan.js'])),
+					.then(()=>loadScript([`https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.js`,'/mosiyuan.js'])),
 					loadCSS(['https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css','../normalize.css']),
 					loadCSS(['https://cdn.jsdelivr.net/gh/LMOliver/lmoliver.github.io@master/default.min.css','../default.css']),
-					loadCSS([`https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.css`,'./mosiyuan.css']),
+					loadCSS([`https://cdn.jsdelivr.net/gh/LMOliver/mosiyuan@${VERSION}/mosiyuan.min.css`,'/mosiyuan.css']),
 				])
 				.then(()=>{
 					document.getElementById('global').innerHTML='';
