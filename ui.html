@@ -5,9 +5,9 @@
 			<li v-for="msg in popMessages" v-html="msg"></li>
 		</ul>
 	</div>
-	<model-alert v-if="showUpdate" :title="`膜拜${Jincheng} ${VERSION} ${VERSION_NAME}`"
+	<model-alert v-if="showUpdate" :title="`膜拜${JINCHENG} ${VERSION} ${VERSION_NAME}`"
 		:value="VERSION_MESSAGE"></model-alert>
-	<h1 v-html="`膜拜${Jincheng}`"></h1>
+	<h1 v-html="`膜拜${JINCHENG}`"></h1>
 	<div>
 		<button style="float: right;"
 			@click="()=>dailyMessage=DAILY_MESSAGES[Math.floor(Math.random()*DAILY_MESSAGES.length)]">{{`换一个`}}</button>
@@ -16,10 +16,10 @@
 	<div class="area">
 		<h2 v-html="`荒野`"></h2>
 		<blockquote>
-			<p v-html="`曾经，有一个高度发达的文明在这个星球上度过了它最为繁荣的时代。在那时，人们相信${Jincheng}是最强的神，也是这个星球的科技、魔法与信仰三大学科体系高度发展的原因。`">
+			<p v-html="`曾经，有一个高度发达的文明在这个星球上度过了它最为繁荣的时代。在那时，人们相信${JINCHENG}是最强的神，也是这个星球的科技、魔法与信仰三大学科体系高度发展的原因。`">
 			</p>
 			<p v-html="`然而好景不长，曾被人们认为亘古不变的真理在一次失控的魔法实验之后支离破碎。科技与魔法的支柱轰然倒塌，毁灭席卷了整个星球。`"></p>
-			<p v-html="`高楼变为废墟，法阵化作黄土，雕像碎成砂砾，但${Jincheng}并未抛弃这个文明——因为信仰仍在。`"></p>
+			<p v-html="`高楼变为废墟，法阵化作黄土，雕像碎成砂砾，但${JINCHENG}并未抛弃这个文明——因为信仰仍在。`"></p>
 		</blockquote>
 		<div class="col">
 			<h4 v-html="`膜拜`"></h4>
@@ -28,7 +28,7 @@
 					<span>{{`您已膜拜${pn(Math.floor(moValue))}次`}}</span>
 				</div>
 				<button @click="moJincheng(1)" style="color:red"
-					v-html="`膜拜${Jincheng}${moDelta!==1?`${pn(moDelta)}次`:''}`"></button>
+					v-html="`膜拜${JINCHENG}${moDelta!==1?`${pn(moDelta)}次`:''}`"></button>
 				<span v-if="bookEffect>0">{{`${pn(bookEffect)}点击/秒`}}</span>
 			</div>
 			<div v-if="moCount>=10">
@@ -91,7 +91,7 @@
 		<strong>{{`已发现${pn(temple)}个遗迹`}}</strong>
 		<blockquote>
 			<p v-html="`过去的事物深埋于地下，而且数量稀少，发掘它们需要坚定的信仰。尽管道路艰辛，但这是前进所必须的代价。文明不进即退，而这残存的文明已经无路可退。`"></p>
-			<p v-html="`在遗迹中，人们惊喜地发现了向${Jincheng}祈求水晶的途径。拥有了水晶，两扇大门便随着遗迹的探索徐徐开启……`"></p>
+			<p v-html="`在遗迹中，人们惊喜地发现了向${JINCHENG}祈求水晶的途径。拥有了水晶，两扇大门便随着遗迹的探索徐徐开启……`"></p>
 		</blockquote>
 		<div class="area">
 			<div class="area">
@@ -364,7 +364,7 @@
 	<div class="area" v-if="tech.explore>0">
 		<h2 v-html="`外域`"></h2>
 		<blockquote>
-			<p v-html="`随着文明的重新建立，人们意识到这个星球上遗留的文明不止一个。“比平凡与愚昧更可怕的是失去光明。”他们是否仍膜拜着${Jincheng}呢？`"></p>
+			<p v-html="`随着文明的重新建立，人们意识到这个星球上遗留的文明不止一个。“比平凡与愚昧更可怕的是失去光明。”他们是否仍膜拜着${JINCHENG}呢？`"></p>
 			<p v-html="`不管如何，人们已经不甘于平凡的生活了。当得知关于敌人的消息后，他们反而热血沸腾，渴望通过战斗来获得全新的资源。`"></p>
 		</blockquote>
 		<div class="area">
@@ -643,8 +643,8 @@
 	<div class="area" v-if="tech.magicTree>0">
 		<h2 v-html="`基地`"></h2>
 		<blockquote>
-			<p v-html="`随着技术的发展，一片专门用于工业生产的区域被开辟出来。为了向${Jincheng}奉上更多的膜拜，人们在此试验千奇百怪的新方法，试图找到一个高效的生产方案。`"></p>
-			<p v-html="`试验中常见的高风险操作和敌人的攻击是这儿多灾多难的主要原因。幸运的是基地受到${Jincheng}的护佑，不至于被摧毁。`"></p>
+			<p v-html="`随着技术的发展，一片专门用于工业生产的区域被开辟出来。为了向${JINCHENG}奉上更多的膜拜，人们在此试验千奇百怪的新方法，试图找到一个高效的生产方案。`"></p>
+			<p v-html="`试验中常见的高风险操作和敌人的攻击是这儿多灾多难的主要原因。幸运的是基地受到${JINCHENG}的护佑，不至于被摧毁。`"></p>
 		</blockquote>
 		<div class="area">
 			<div class="col">
@@ -681,7 +681,7 @@
 			<div class="col">
 				<m-doc :need="1e5" :value="moCount" title="文档 A">
 					<p
-						v-html="`以这个文明的现有技术水平还不能解读这篇${'&lt;a href=&quot;./documentA.pdf&quot;>'}“天书”${'&lt;/a>'}中的东西，但${Jincheng}一定可以。`">
+						v-html="`以这个文明的现有技术水平还不能解读这篇${'&lt;a href=&quot;./documentA.pdf&quot;>'}“天书”${'&lt;/a>'}中的东西，但${JINCHENG}一定可以。`">
 					</p>
 				</m-doc>
 			</div>
@@ -697,14 +697,14 @@
 			<div class="col">
 				<m-doc :need="1e7" :value="moCount" title="文档 C">
 					<p
-						v-html="`一张图片表现了一位高手在膜拜${Jincheng}后取得了丰硕战果时的${'&lt;a href=&quot;./documentC.png&quot;>'}快乐${'&lt;/a>'}。`">
+						v-html="`一张图片表现了一位高手在膜拜${JINCHENG}后取得了丰硕战果时的${'&lt;a href=&quot;./documentC.png&quot;>'}快乐${'&lt;/a>'}。`">
 					</p>
 				</m-doc>
 			</div>
 			<div class="col">
 				<m-doc :need="1e8" :value="moCount" title="文档 D">
 					<p
-						v-html="`一些 php 和 md 文件，似乎是一篇${'&lt;a href=&quot;https://orzJincheng.com/archives/2019-Multi-University-Training-Contest-1-Function/&quot;>'}博客文章${'&lt;/a>'}。从博客名（orzJincheng.com）可以看出即使对于个人，膜拜${Jincheng}也非常重要。`">
+						v-html="`一些 php 和 md 文件，似乎是一篇${'&lt;a href=&quot;https://orzJincheng.com/archives/2019-Multi-University-Training-Contest-1-Function/&quot;>'}博客文章${'&lt;/a>'}。从博客名（orzJincheng.com）可以看出即使对于个人，膜拜${JINCHENG}也非常重要。`">
 					</p>
 				</m-doc>
 			</div>
