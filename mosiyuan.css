@@ -84,7 +84,7 @@ button{
 	margin: 4px 0;
 }
 
-.siyuan{
+.Jincheng{
 	display: inline-block;
 	font-weight: bold;
 	font-size: 0.9em;
@@ -93,10 +93,10 @@ button{
 	padding-inline-end: 2px;
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif,
 }
-.siyuan{
+.Jincheng{
 	color:red;
 }
-.siyuan:first-letter{
+.Jincheng:first-letter{
 	color:black !important;
 }
 
